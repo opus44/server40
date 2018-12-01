@@ -1,0 +1,24 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "Full Stack React - Udemy Course",
+  "main": "index.js",
+  "engines": {
+    "node": "10.8.1",
+    "npm": "6.2.0"
+  },
+  "scripts": {
+    "start": "node index.js"
+  },
+  "keywords": [
+    "Steve",
+    "\u001b[DGrider",
+    "UdemyCourse",
+    "FullStackReack"
+  ],
+  "author": "jsbacon",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.4"
+  }
+}
