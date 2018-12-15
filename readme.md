@@ -36,8 +36,9 @@ https://accounts.google.com/o/oauth2/v2/auth?response_type=code&redirect_uri=htt
 
 index4.js - mongoose.js library - implementation of **MongoDB**
 
-We began by **refactoring** the code to extract the google routes and services to separate files.
-Then we took first steps into understanding and using mongoDB.
+* **refactoring** the code to extract the google routes and services to separate files.
+
+* first steps into understanding and using mongoDB.
 
 mlab.com - mongodb website
 
@@ -66,7 +67,10 @@ mongodb://dbuser:dbpassword@ds163630.mlab.com:63630/emaily-dev
 
 ----------
 index5.js - 
-
+- creating a mongoose **model class** (collection, schema)
+- basic logic for only creating one user id entry in our collection
+- first time using a mongoDB **query request**
+- callback  and promises(**.then**) on the query and the save operations 
 
 ----------
 

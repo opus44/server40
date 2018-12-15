@@ -7,13 +7,15 @@ const User = mongoose.model('users');
 // console.log(User);
 
 passport.serializeUser((user, done) => {
+    console.log('serializeUser');
     done(null, user.id);
 });
 
 passport.deserializeUser((id, done) => {
-    User.findById(id)
-    .then(user => {
+    console.log('deserializeUser');
+    User.findById(id).then(user => {
         done(null, user);
+        console.log('user: ' + user);
     });
 });
 
@@ -31,6 +33,7 @@ passport.use(
                         console.log('we found you ' + profile.id + ' ' + existingUser.id);
                         done(null, existingUser);
                     } else {
+                        console.log('You are a new user ' + profile.id );
                         new User ({ googleID: profile.id, googleDisplayName: profile.displayName })
                         .save()
                         .then(user => done(null, user));

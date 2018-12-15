@@ -8,4 +8,5 @@ const userSchema = new Schema({
     googleDisplayName: String
 });
 
+console.log('setting up mongoose model');
 mongoose.model('users', userSchema);
