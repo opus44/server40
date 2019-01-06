@@ -6,10 +6,10 @@ const keys = require('./config/keys');
 require('./models/User');
 require('./services/passport.js');
 
+mongoose.Promise = global.Promise;
 mongoose.connect(keys.mongoURI);
 
 const app = express();
-
 console.log('entering app.use zone');
 app.use(
     cookieSession({
